@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <p id="timer">25:00</p>
+        <form action="/start-timer" method="post">
+            <button type="submit">Start Timer</button>
+        </form>
+        <form action="/add-task" method="post">
+            <input type="text" name="task" placeholder="Enter task">
+            <button type="submit">Add Task</button>
+        </form>
+        <h2>Task List</h2>
+        <ul id="taskList">
+            <!-- Tasks will be added here -->
+        </ul>
+    </div>
+</body>
+</html>
